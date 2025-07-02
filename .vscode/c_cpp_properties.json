@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/src/exceptions",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/core",
+                "${workspaceFolder}/src/core/entidades",
+                "${workspaceFolder}/**",
+                "C:/msys64/ucrt64/include",
+                "C:/msys64/ucrt64/include/QtCore",
+                "C:/msys64/ucrt64/include/QtGui",
+                "C:/msys64/ucrt64/include/QtWidgets"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

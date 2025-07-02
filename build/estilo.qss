@@ -1,0 +1,125 @@
+/* === Estilo global === */
+QWidget {
+    background-color: #ffffff; /* Blanco */
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    color: #000000; /* Negro */
+}
+
+/* === Botones === */
+QPushButton {
+    background-color: #ff69b4; /* Rosado */
+    color: #000000; /* Negro */
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+QPushButton:hover {
+    background-color: #ff0000; /* Rojo */
+    font-weight: bold;
+}
+
+/* === Campos de entrada === */
+QLineEdit, QDoubleSpinBox, QSpinBox {
+    border: 1px solid #000000; /* Negro */
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #ffffff; /* Blanco */
+    color: #000000;
+    font-size: 19px;
+}
+
+/* === Selects (QComboBox) === */
+QComboBox {
+    background-color: #ffffff; /* Blanco */
+    color: #000000;
+    border: 1px solid #000000; /* Negro */
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 19px;
+}
+
+QComboBox:hover {
+    border: 1px solid #000000; /* Negro */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 34px;
+    border-left: 1px solid #000000;
+    background-color: #ffff00; /* Amarillo */
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/down-arrow.png);
+    width: 16px;
+    height: 16px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff; /* Blanco */
+    selection-background-color: #00ff00; /* Verde */
+    selection-color: #000000;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 19px;
+}
+
+/* === Listas (QListWidget) === */
+QListWidget {
+    background-color: #ffffff; /* Blanco */
+    border: 1px solid #000000;
+    padding: 8px;
+    color: #000000;
+    font-size: 19px;
+}
+
+/* === Pestañas (QTabWidget) === */
+QTabWidget::pane {
+    border: 1px solid #000000;
+    padding: 14px;
+}
+
+QTabBar::tab {
+    background: #add8e6; /* Azul claro */
+    padding: 16px 24px;
+    font-size: 20px;
+    margin-right: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #000000;
+}
+
+QTabBar::tab:selected {
+    background: #ffa500; /* Naranja */
+    font-weight: bold;
+    color: #000000;
+}
+
+/* === Textos multilínea (QTextEdit) === */
+QTextEdit {
+    background-color: #ffffff; /* Blanco */
+    color: #000000;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #000000;
+    font-size: 19px;
+}
+
+/* === Etiquetas (QLabel) === */
+QLabel {
+    color: #000000;
+    font-size: 19px;
+}
+
+/* === SpinBoxes === */
+QSpinBox, QDoubleSpinBox {
+    background-color: #ffffff; /* Blanco */
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 19px;
+}
