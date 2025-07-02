@@ -1,0 +1,25 @@
+# 🚧 Limpiar la compilación anterior
+cd ..
+rm -rf build
+
+# 🗂️ Crear y entrar a la carpeta de compilación
+mkdir build
+cd build
+
+# 🏗️ Generar archivos de proyecto con CMake usando MinGW
+cmake .. -G "MinGW Makefiles"
+
+# 🔨 Compilar el proyecto con mingw32-make
+mingw32-make
+
+# 📂 Entrar a la carpeta del proyecto (ruta absoluta en formato Unix)
+cd /c/Users/Usuario/Documents/sistema_bancario_bovedas/build
+
+# 🚀 Ejecutar el programa
+./SistemaBancario.exe
+
+# 📦 Copiar las dependencias necesarias (.dll, plugins, etc.)
+windeployqt SistemaBancario.exe
+
+# Instalar ANGLE (libGLESv2, libEGL, D3Dcompiler) para soporte gráfico
+pacman -S mingw-w64-ucrt-x86_64-angleproject
